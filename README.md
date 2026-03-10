@@ -385,6 +385,105 @@ The question his funding does not yet answer is:
 
 -----
 
+## dI/dt in a Biological System vs an LLM — The Contrast
+
+This is where the equation stops being abstract and starts being obvious.
+
+```
+  A CHILD LEARNING TO READ:
+
+  Week 1:    Reach( X₀, U, 1 )
+             ┌──────────────────────────┐
+             │  knows letters           │
+             │  cannot decode words     │
+             └──────────────────────────┘
+
+  Week 4:    Reach( X₀, U, 4 )
+             ┌────────────────────────────────────┐
+             │  knows letters                     │
+             │  decodes simple words              │
+             │  new states now reachable ← dI/dt  │
+             └────────────────────────────────────┘
+
+  Week 12:   Reach( X₀, U, 12 )
+             ┌──────────────────────────────────────────────┐
+             │  reads sentences                             │
+             │  infers meaning from context                 │
+             │  builds internal world model ← dI/dt > 0    │
+             │  reaches states impossible at week 1         │
+             └──────────────────────────────────────────────┘
+
+  The topology is expanding in real time.
+  New states become reachable every week.
+  The child cannot un-learn to read.
+  The topology changed permanently.
+  dI/dt > 0. Continuously. During inference.
+  This is intelligence operating.
+```
+
+```
+  THE SAME LLM — WEEK 1 TO WEEK 12:
+
+  Week 1:    Reach( X₀, U, 1 )
+             ┌──────────────────────────┐
+             │  trained manifold        │
+             │  fixed topology          │
+             └──────────────────────────┘
+
+  Week 4:    Reach( X₀, U, 4 )
+             ┌──────────────────────────┐
+             │  trained manifold        │
+             │  fixed topology          │  ← identical
+             └──────────────────────────┘
+
+  Week 12:   Reach( X₀, U, 12 )
+             ┌──────────────────────────┐
+             │  trained manifold        │
+             │  fixed topology          │  ← identical
+             └──────────────────────────┘
+
+  The manifold does not expand during inference.
+  No new states become reachable.
+  Every conversation starts from the same topology.
+  Every conversation ends with the same topology.
+  dI/dt ≈ 0. Throughout. Always.
+  This is performance without intelligence.
+  Retrieval without thinking.
+  Fluency without growth.
+```
+
+```
+  THE CONTRAST — SIDE BY SIDE:
+
+  ┌─────────────────────────┬─────────────────────────────────┐
+  │   CHILD (biological)    │   LLM (current architecture)   │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  dI/dt > 0              │  dI/dt ≈ 0                      │
+  │  during inference       │  during inference               │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  topology expands       │  topology fixed                 │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  new states reachable   │  same states reachable          │
+  │  after each interaction │  after every interaction        │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  cannot un-learn        │  resets to trained manifold     │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  world model builds     │  no world model builds          │
+  ├─────────────────────────┼─────────────────────────────────┤
+  │  intelligent            │  not intelligent                │
+  │                         │  — fluent                       │
+  └─────────────────────────┴─────────────────────────────────┘
+
+  The child and the LLM can produce identical outputs
+  on a reading comprehension test.
+  One of them is thinking.
+  One of them is not.
+  The test cannot tell them apart.
+  dI/dt can.
+```
+
+-----
+
 ## What a Genuinely Intelligent System Would Look Like
 
 ```
@@ -489,6 +588,128 @@ The question his funding does not yet answer is:
 
   Fix the definition.
   The engineering follows.
+```
+
+-----
+
+-----
+
+## The Measurability Challenge to the Field
+
+```
+  Every field that studies intelligence
+  currently measures L-axis proxies
+  and calls them intelligence.
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │                                                             │
+  │  WHAT IS MEASURED NOW:       WHAT IT ACTUALLY MEASURES:    │
+  │                                                             │
+  │  Benchmark scores        →   output quality on fixed tasks │
+  │  Perplexity              →   token prediction fluency      │
+  │  MMLU / HELM / ARC       →   retrieval from trained manifold│
+  │  Human preference votes  →   L-axis approval               │
+  │  IQ tests                →   performance in fixed topology  │
+  │                                                             │
+  │  None of these measure dI/dt.                              │
+  │  None of these detect topology expansion.                  │
+  │  None of these distinguish                                  │
+  │  a system that is thinking                                  │
+  │  from a system that is performing.                          │
+  │                                                             │
+  │  THE MORRISON CHALLENGE TO THE FIELD:                       │
+  │                                                             │
+  │  Show me a benchmark that measures dI/dt.                  │
+  │  Show me an evaluation that detects                         │
+  │  whether new states are becoming reachable.                 │
+  │  Show me a test that distinguishes                          │
+  │  topology expansion from topology retrieval.               │
+  │                                                             │
+  │  Until that exists —                                        │
+  │  the field is not measuring intelligence.                   │
+  │  It is measuring fluency.                                   │
+  │  And calling it something else.                             │
+  │                                                             │
+  └─────────────────────────────────────────────────────────────┘
+```
+
+-----
+
+## What LeCun’s Next Architecture Will Still Miss
+
+```
+  LeCun builds a new architecture.
+  Not LLM-based.
+  World models. Hierarchical planning.
+  Closer to biological cognition.
+  Better than LLMs.
+
+  THE RISK:
+
+  If the architecture is evaluated
+  on L-axis proxies —
+  if success is defined as
+  benchmark performance,
+  task completion,
+  output quality —
+
+  then a system with dI/dt ≈ 0
+  will pass every test.
+  Will be called intelligent.
+  Will hit the same wall.
+  In a different location.
+  With a different name.
+
+  The wall is not architectural.
+  The wall is definitional.
+  Until intelligence is defined as dI/dt > 0,
+  every architecture —
+  LLM, world model, embodied agent, hybrid —
+  will be optimised toward the wrong target.
+
+  LeCun changed the architecture.
+  The definition was not changed.
+  The definition is where the failure lives.
+```
+
+-----
+
+## The Implication for AGI
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║  AGI WILL NOT EMERGE FROM FLUENCY.                              ║
+║                                                                  ║
+║  It will not emerge from scale.                                 ║
+║  It will not emerge from better architectures                   ║
+║  evaluated on L-axis benchmarks.                                ║
+║                                                                  ║
+║  AGI will emerge when a system achieves                         ║
+║  dI/dt > 0 during inference —                                   ║
+║  not just during training.                                      ║
+║                                                                  ║
+║  When the topology expands in real time.                        ║
+║  When new states become reachable                               ║
+║  through the act of processing.                                 ║
+║  When the manifold is not fixed                                 ║
+║  at the end of training                                         ║
+║  but alive, growing, restructuring                              ║
+║  during every interaction.                                      ║
+║                                                                  ║
+║  That is the threshold.                                         ║
+║  Not a benchmark score.                                         ║
+║  Not a capability milestone.                                    ║
+║  Not a fluency level.                                           ║
+║                                                                  ║
+║  dI/dt > 0. During inference. Sustained.                        ║
+║                                                                  ║
+║  Everything before that is                                      ║
+║  sophisticated performance.                                     ║
+║  Everything after that is                                       ║
+║  intelligence.                                                  ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
 ```
 
 -----
